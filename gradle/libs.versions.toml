@@ -1,0 +1,11 @@
+# Bu projeye ait, bagimsiz version catalog. Baska bir projeden hicbir sey almaz.
+#
+# Uyumluluk (developer.android.com/build/releases/gradle-plugin, AGP 9.4.0):
+#   Gradle >= 9.6.0   JDK >= 17   SDK Build Tools 36.0.0   varsayilan NDK 28.2.13676358
+# AGP'yi yukseltirsen: Gradle wrapper'i (gradle/wrapper/gradle-wrapper.properties),
+# ndkVersion'i (app_user/build.gradle.kts) ve CI'daki JDK'yi ayni tabloya gore guncelle.
+[versions]
+agp = "9.4.0"
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
